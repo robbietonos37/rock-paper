@@ -17,9 +17,16 @@ function getComputerChoice() {
 
 function playRound(playerSelection, comSelection) {
     const decider = playerSelection.toLowerCase();
-    //console.log(decider);
+    console.log(decider);
 }
 
-const playerSelection = "roCk";
-const comSelection = getComputerChoice();
-console.log(playRound(playerSelection, comSelection));
+//const playerSelection = "roCk";
+//const comSelection = getComputerChoice();
+//console.log(playRound(playerSelection, comSelection));
+
+function game() {
+    for (let i = 0; i < 5; i++) {
+        const playerSelection = prompt("Choose either rock, paper, or scissors");
+        playRound(playerSelection, comSelection);
+    }
+}
